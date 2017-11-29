@@ -9,18 +9,8 @@ import 'package:js/js.dart';
 external dynamic _eval(String source);
 
 final Function _jsCreateCustomEvent = _eval('''
-  (function _jsCreateCustomEvent(type,
-      detail,
-      bubbles,
-      cancelable,
-      composed
-  ) {
-    return new CustomEvent(type, {
-      detail: detail,
-      bubbles: bubbles,
-      cancelable: cancelable,
-      composed: composed,
-    });
+  (function _jsCreateCustomEvent(type, detail, bubbles, cancelable, composed) {
+    return new CustomEvent(type, { detail: detail, bubbles: bubbles, cancelable: cancelable, composed: composed});
   })
 ''');
 
