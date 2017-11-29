@@ -1,4 +1,4 @@
 name: shell_events
 version: 1.0.0
-dependencies: 
-transformers: 
+dependencies:
+  js: "^0.6.1"
