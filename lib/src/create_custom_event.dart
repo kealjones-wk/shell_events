@@ -14,6 +14,6 @@ final Function _jsCreateCustomEvent = _eval('''
   })
 ''');
 
-CustomEvent createCustomEvent(String type, { Map detail, bool bubbles: true, bool cancelable: true, bool composed: true }) {
+CustomEvent createCustomEvent(String type, { dynamic detail, bool bubbles: true, bool cancelable: true, bool composed: true }) {
   return _jsCreateCustomEvent(type, detail, bubbles, cancelable, composed);
 }
