@@ -8,6 +8,6 @@ import './shell_event_constants.dart';
 class ShellExperienceRequstedEvent {
   Event e;
   ShellExperienceRequstedEvent(experience) {
-    this.e = createCustomEvent(ShellEventConstants.EXPERIENCE_REQUESTED.event, detail: jsify({'experience': experience}));
+    this.e = createCustomEvent(ShellEventConstants.EXPERIENCE_REQUESTED.event, detail: {'experience': experience});
   }
 }
