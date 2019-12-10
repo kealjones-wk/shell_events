@@ -1,7 +1,7 @@
 name: shell_events
 version: 1.0.0
 dependencies:
-  over_react: '>=1.30.2 <3.0.0'
+  over_react: ^3.0.0 # This requirement forces all its consumers to have over_react in this range.
   js: "^0.6.1"
 dev_dependencies:
   build_runner:
